@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseurl = "https://localhost:5000"
+const baseurl = "http://localhost:5000"
 
 const getAllToDo = (setToDO) => {
     axios
@@ -22,7 +22,7 @@ const addToDo = (text, setText, setToDo) => {
 }
 
 
-const updateToDo = (updateToDo, text, setToDo,setIsUpdating) => {
+const updateToDo = (toDoId, text, setToDo,setText,setIsUpdating) => {
     axios
     .post(`${baseurl}/update`, {_id : toDoId, text})
     .then((data) => {
