@@ -40,9 +40,7 @@ function App() {
         </div>
 
         <div className="list">
-          {toDo.map((item) => <ToDo 
-          key={item._id}
-         text={item.text} 
+          {toDo.map((item) => <ToDo key={item._id} text={item.text} 
          updateMode = {() => updateMode (item._id, item.text) }/>)}
 
 
