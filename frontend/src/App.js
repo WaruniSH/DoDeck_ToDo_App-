@@ -15,7 +15,7 @@ function App() {
   const updateMode = (_id, text) => {
       setIsUpdating(true)
       setText(text)
-      setToDo(_id)
+      setToDoId(_id)
   }
 
   return (
